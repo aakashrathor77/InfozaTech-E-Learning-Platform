@@ -1,0 +1,141 @@
+
+.course-details-page {
+  min-height: 100vh;
+  padding: 40px 6%;
+  background: #f4f7fc;
+  font-family: "Inter", sans-serif;
+}
+
+.course-details-header {
+  margin-top: 25px;
+  padding: 35px;
+  background: white;
+  border: 1px solid #e7edf6;
+  border-radius: 18px;
+}
+
+.course-details-header > svg {
+  color: #2563eb;
+}
+
+.course-details-header h1 {
+  margin: 15px 0 10px;
+  color: #172554;
+  font-size: 30px;
+}
+
+.course-details-header p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.course-progress-summary {
+  max-width: 500px;
+  margin-top: 28px;
+  color: #2563eb;
+}
+
+.course-progress-summary .my-progress-track {
+  margin-top: 12px;
+}
+
+.lessons-section {
+  margin-top: 35px;
+}
+
+.lessons-section > h2 {
+  margin-bottom: 20px;
+  color: #172554;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  margin-bottom: 15px;
+  background: white;
+  border: 1px solid #e7edf6;
+  border-radius: 13px;
+}
+
+.lesson-number {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #eaf1ff;
+  color: #2563eb;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.lesson-info {
+  flex: 1;
+}
+
+.lesson-info h3 {
+  margin: 0 0 8px;
+  color: #172554;
+  font-size: 16px;
+}
+
+.lesson-info p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.lesson-complete-btn {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lesson-complete-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.lesson-completed {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 650px) {
+  .course-details-page {
+    padding: 25px 5%;
+  }
+
+  .course-details-header {
+    padding: 22px;
+  }
+
+  .course-details-header h1 {
+    font-size: 23px;
+  }
+
+  .lesson-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .lesson-info {
+    min-width: 70%;
+  }
+
+  .lesson-complete-btn {
+    margin-left: 60px;
+  }
+}
